@@ -8,6 +8,7 @@ Minimalist i3wm configuration in blue and purple tones.
 - **Terminal:** `~/.config/alacritty/alacritty.toml`
 - **Window Manager:** `~/.config/i3/config`
 - **Status Bar:** `/etc/i3status.conf`
+- **Wallpaper:** `~/wallp.png`
 
 ## Dependencies
 
