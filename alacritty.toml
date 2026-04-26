@@ -1,0 +1,33 @@
+[window]
+padding = { x = 12, y = 12 }
+opacity = 0.8
+blur = true
+
+[font]
+size = 8.5
+normal = { family = "JetBrains Mono", style = "Medium" }
+
+[colors.primary]
+background = '#24283b'
+foreground = '#c0caf5'
+bright_foreground = '#5a618e'
+
+[colors.normal]
+black   = '#1d202f'
+red     = '#f7768e'
+green   = '#73daca'
+yellow  = '#e0af68'
+blue    = '#7aa2f7'
+magenta = '#bb9af7'
+cyan    = '#7dcfff'
+white   = '#a9b1d6'
+
+[colors.bright]
+black   = '#414868'
+red     = '#ff7a93'
+green   = '#b9f27c'
+yellow  = '#ff9e64'
+blue    = '#7da6ff'
+magenta = '#bb9af7'
+cyan    = '#0db9d7'
+white   = '#c0caf5'
