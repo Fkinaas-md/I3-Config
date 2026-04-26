@@ -1,4 +1,4 @@
-# Tokyo Night Dotfiles
+# I3-WM Dotfiles ! :3 
 
 ![Preview](preview.png)
 
@@ -9,7 +9,7 @@ Minimalist i3wm configuration in blue and purple tones.
 - **Window Manager:** `~/.config/i3/config`
 - **Status Bar:** `/etc/i3status.conf`
 
-## Dependencies by Distribution
+## Dependencies
 
 ### Gentoo
 ```bash
@@ -23,7 +23,7 @@ emerge x11-wm/i3 \
        x11-misc/autotiling
 ```
 
-### Arch Linux
+### Arch
 ```bash
 pacman -S i3-wm \
           i3status \
@@ -35,7 +35,7 @@ pacman -S i3-wm \
           autotiling
 ```
 
-### Void Linux
+### Void
 ```bash
 xbps-install i3 \
              i3status \
