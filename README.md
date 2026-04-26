@@ -45,8 +45,7 @@ xbps-install i3 \
              font-jetbrains-mono-otf \
              feh \
              xclip \
-             python3-pip && \
-             pip install autotiling
+             autotiling \
 ```
 
 ### Linux Mint / Ubuntu
