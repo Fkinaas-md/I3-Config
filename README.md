@@ -1,4 +1,4 @@
-<h1 align="center">I3 /\ Sway Dotfiles ! :3</h1>
+<h1 align="center">I3-WM Dotfiles ! :3</h1>
 
 ![Preview](preview.png)
 
@@ -9,6 +9,7 @@ Minimalist i3wm configuration in blue and purple tones.
 - **Window Manager:** `~/.config/i3/config`
 - **Status Bar:** `/etc/i3status.conf`
 - **Wallpaper:** `~/wallp.png`
+- **Flameshot:** `~/.config/flameshot/flameshot.ini`
 
 ## Dependencies
 
@@ -28,8 +29,8 @@ emerge x11-wm/i3 \
 ```bash
 emerge gui-wm/sway \
        gui-apps/awww \
+       gui-apps/flameshot \
        gui-apps/grim \
-       gui-apps/slurp \
        gui-apps/wl-clipboard \
        x11-base/xwayland
 ```
@@ -50,8 +51,8 @@ pacman -S i3-wm \
 ```bash
 pacman -S sway \
           awww \
+          flameshot \
           grim \
-          slurp \
           wl-clipboard \
           xorg-xwayland
 ```
@@ -72,8 +73,8 @@ xbps-install i3 \
 ```bash
 xbps-install sway \
              swww \
+             flameshot \
              grim \
-             slurp \
              wl-clipboard \
              xwayland
 ```
@@ -89,11 +90,11 @@ apt install i3 \
             xclip \
 ```
 
-**Sway Extras (Mint | Ubuntu):**
+**Sway Extras ( Mint | Ubuntu):**
 ```bash
 apt install sway \
+            flameshot \
             grim \
-            slurp \
             wl-clipboard \
             xwayland
 ```
