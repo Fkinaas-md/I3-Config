@@ -1,4 +1,4 @@
-# I3-WM Dotfiles ! :3 
+<h1 align="center">I3 /\ Sway Dotfiles ! :3</h1>
 
 ![Preview](preview.png)
 
@@ -24,6 +24,16 @@ emerge x11-wm/i3 \
        x11-misc/autotiling
 ```
 
+**Sway Extras (Gentoo):**
+```bash
+emerge gui-wm/sway \
+       gui-apps/awww \
+       gui-apps/grim \
+       gui-apps/slurp \
+       gui-apps/wl-clipboard \
+       x11-base/xwayland
+```
+
 ### Arch
 ```bash
 pacman -S i3-wm \
@@ -36,6 +46,16 @@ pacman -S i3-wm \
           autotiling
 ```
 
+**Sway Extras (Arch):**
+```bash
+pacman -S sway \
+          awww \
+          grim \
+          slurp \
+          wl-clipboard \
+          xorg-xwayland
+```
+
 ### Void
 ```bash
 xbps-install i3 \
@@ -45,10 +65,20 @@ xbps-install i3 \
              font-jetbrains-mono-otf \
              feh \
              xclip \
-             autotiling \
+             autotiling
 ```
 
-### Linux Mint / Ubuntu
+**Sway Extras (Void):**
+```bash
+xbps-install sway \
+             swww \
+             grim \
+             slurp \
+             wl-clipboard \
+             xwayland
+```
+
+### Mint | Ubuntu
 ```bash
 apt install i3 \
             i3status \
@@ -59,5 +89,14 @@ apt install i3 \
             xclip \
             python3-pip && \
             pip3 install autotiling
+```
+
+**Sway Extras (Mint | Ubuntu):**
+```bash
+apt install sway \
+            grim \
+            slurp \
+            wl-clipboard \
+            xwayland
 ```
 ---
