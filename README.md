@@ -10,6 +10,7 @@ Minimalist i3wm configuration in blue and purple tones.
 - **Status Bar:** `/etc/i3status.conf`
 - **Wallpaper:** `~/wallp.png`
 - **Flameshot:** `~/.config/flameshot/flameshot.ini`
+- **Starship:** `~/.config/starship.toml`
 
 ## Dependencies
 
