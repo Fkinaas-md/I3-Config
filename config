@@ -7,24 +7,26 @@ client.urgent           #f7768e #f7768e #ffffff #f7768e   #f7768e
 default_border pixel 3
 default_floating_border pixel 3
 
-
 for_window [class=".*"] border pixel 3
 gaps inner 8
 gaps outer 0 
 set $mod Mod4
 set $alt Mod1
 
-font pango:JetBrains Mono 10
+font pango:JetBrains Mono 11
 
-# autostart :D
-exec_always --no-startup-id xclip & 
-exec_always --no-startup-id feh --bg-scale wallp.png
-exec_always --no-startup-id pulseaudio --start
-exec_always --no-startup-id start-pulseaudio-x11
-exec_always --no-startup-id wireplumber
-exec_always --no-startup-id setxkbmap -layout "us,ru" -option "grp:alt_shift_toggle"
+# sway autostart
+exec_always --no-startup-id awww img /home/kitty/wallp.png
+exec_always --no-startup-id awww-daemon
+exec_always --no-startup-id wlr-randr --output HDMI-A-1 --mode 1920x1080@180.001999
+
+# I3 autostart :D
+#exec_always --no-startup-id xrandr --output HDMI-0 --mode 1920x1080 -r 180.00 
+exec_always --no-startup-id dunst
+#exec_always --no-startup-id xclip & 
+#exec_always --no-startup-id feh --bg-scale wallp.png
+#exec_always --no-startup-id setxkbmap -layout "us,ru" -option "grp:alt_shift_toggle"
 exec_always --no-startup-id autotiling
-exec_always feh --bg-scale wallp.png
 exec_always --no-startup-id dex --autostart --environment i3
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 exec --no-startup-id nm-applet
@@ -39,7 +41,7 @@ floating_modifier $mod
 
 # move tiling windows via drag & drop by left-clicking into the title bar,
 # or left-clicking anywhere into the window while holding the floating modifier.
-tiling_drag modifier titlebar
+#tiling_drag modifier titlebar
 
 # start a terminal
 bindsym $mod+Return exec alacritty
@@ -48,8 +50,9 @@ bindsym $mod+Return exec alacritty
 bindsym $mod+Shift+q kill
 
 bindsym $mod+d exec --no-startup-id dmenu_run -nb "#24283b" -nf "#c0caf5" -sb "#5a618e" -sf "#ffffff" -fn "JetBrains Mono-10"
-bindsym $mod+e exec pcmanfm
-bindsym $mod+o exec --no-startup-id flameshot gui --clipboard
+bindsym $mod+e exec dolphin
+bindsym $mod+o exec grim -g "$(slurp)" - | tee ~/Pictures/$(date +%Y-%m-%d_%H-%m-%s).png | wl-copy
+#bindsym $mod+o exec --no-startup-id flameshot gui --clipboard
 
 # change focus
 bindsym $mod+j focus left
@@ -171,7 +174,7 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
         status_command i3status
-	position top
+	position bottom
 	 colors {
         background #24283b
         statusline #c0caf5
@@ -183,3 +186,10 @@ bar {
         urgent_workspace   #f7768e #f7768e #ffffff
     }
 }
+
+input "type:keyboard" {
+    xkb_layout us,ru
+    xkb_options grp:alt_shift_toggle
+}
+
+
