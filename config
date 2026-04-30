@@ -51,8 +51,8 @@ bindsym $mod+Shift+q kill
 
 bindsym $mod+d exec --no-startup-id dmenu_run -nb "#24283b" -nf "#c0caf5" -sb "#5a618e" -sf "#ffffff" -fn "JetBrains Mono-10"
 bindsym $mod+e exec dolphin
-#bindsym $mod+o exec grim -g "$(slurp)" - | tee ~/Pictures/$(date +%Y-%m-%d_%H-%m-%s).png | wl-copy
 bindsym $mod+o exec --no-startup-id flameshot gui --raw | wl-copy
+#bindsym $mod+o exec --no-startup-id flameshot gui --raw | xclip -selection clipboard -t image/png
 
 # change focus
 bindsym $mod+j focus left
