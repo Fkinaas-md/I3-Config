@@ -35,6 +35,14 @@ emerge gui-wm/sway \
        x11-base/xwayland
 ```
 
+**Shell Extras (Gentoo):**
+```bash
+emerge app-shells/zsh \
+       app-shells/zsh-syntax-highlighting \
+       app-shells/zsh-autosuggestions \
+       app-shells/starship
+```
+
 ### Arch
 ```bash
 pacman -S i3-wm \
@@ -55,6 +63,14 @@ pacman -S sway \
           grim \
           wl-clipboard \
           xorg-xwayland
+```
+
+**Shell Extras (Arch):**
+```bash
+pacman -S zsh \
+          zsh-syntax-highlighting \
+          zsh-autosuggestions \
+          starship
 ```
 
 ### Void
@@ -79,6 +95,14 @@ xbps-install sway \
              xwayland
 ```
 
+**Shell Extras (Void):**
+```bash
+xbps-install zsh \
+             zsh-syntax-highlighting \
+             zsh-autosuggestions \
+             starship
+```
+
 ### Mint | Ubuntu
 ```bash
 apt install i3 \
@@ -87,7 +111,7 @@ apt install i3 \
             dmenu \
             fonts-jetbrains-mono \
             feh \
-            xclip \
+            xclip
 ```
 
 **Sway Extras (Mint | Ubuntu):**
@@ -97,5 +121,13 @@ apt install sway \
             grim \
             wl-clipboard \
             xwayland
+```
+
+**Shell Extras (Mint | Ubuntu):**
+```bash
+apt install zsh \
+            zsh-syntax-highlighting \
+            zsh-autosuggestions \
+            starship
 ```
 ---
