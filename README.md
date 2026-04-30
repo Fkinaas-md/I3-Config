@@ -87,8 +87,6 @@ apt install i3 \
             fonts-jetbrains-mono \
             feh \
             xclip \
-            python3-pip && \
-            pip3 install autotiling
 ```
 
 **Sway Extras (Mint | Ubuntu):**
