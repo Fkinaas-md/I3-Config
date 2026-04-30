@@ -90,7 +90,7 @@ apt install i3 \
             xclip \
 ```
 
-**Sway Extras ( Mint | Ubuntu):**
+**Sway Extras (Mint | Ubuntu):**
 ```bash
 apt install sway \
             flameshot \
