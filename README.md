@@ -1,4 +1,4 @@
-<h1 align="center">I3-WM Dotfiles ! :3</h1>
+<h1 align="center">I3 | Sway Dotfiles ! :3</h1>
 
 ![Preview](preview.png)
 
